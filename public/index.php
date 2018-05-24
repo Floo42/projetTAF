@@ -13,7 +13,7 @@ function getPage($p) {
         return 'search.php';
     }
     else {
-        return '404.html';
+        return 'notfound.html';
     }
 
 }
