@@ -1,11 +1,20 @@
 <?php
 
+$jsonContent = file_get_contents('../config.json');
+$json = $json = json_decode($jsonContent, true);
+
+$url = $json['url'];
+$email = $json['email'];
+$mysqlHost = $json['DSN']['host'];
+$dbname = $json['DSN']['dbname'];
+$mysqlUser = $json['DSN']['username'];
+$mysqlPass = $json['DSN']['password'];
+
 $url = explode("/", $_SERVER['REQUEST_URI']);
 
 $page = $url[1];
 
 function getPage($p) {
-
     if (empty($p)) {
         return 'home.php';
     }
@@ -15,7 +24,6 @@ function getPage($p) {
     else {
         return 'notfound.html';
     }
-
 }
 
 include('../src/' . getPage($page));
