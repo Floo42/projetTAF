@@ -3,7 +3,7 @@
 $jsonContent = file_get_contents('../config.json');
 $json = $json = json_decode($jsonContent, true);
 
-$url = $json['url'];
+$domain = $json['url'];
 $email = $json['email'];
 $mysqlHost = $json['DSN']['host'];
 $dbname = $json['DSN']['dbname'];
