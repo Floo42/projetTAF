@@ -2,12 +2,12 @@
 <head>
     <title>Ynov Lyon</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/home.css">gi
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
 
-<form action="" method="POST">
+<form action="" method="POST" class="form">
     <select name="thematique">
         <option value="default" selected>Thématique</option>
         <option value="informatique">Informatique</option>
