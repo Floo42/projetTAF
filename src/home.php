@@ -2,11 +2,7 @@
 <head>
     <title>Ynov Lyon</title>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="style.css">
-=======
     <link rel="stylesheet" href="css/home.css">
->>>>>>> 1254013c5233b2f32d79149938b9b9451cbf6bad
 </head>
 
     <body>
