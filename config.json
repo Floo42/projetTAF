@@ -1,5 +1,5 @@
 {
-  "url": "http://ynov-taf.local/",
+  "url": "http://ynov-taf.local",
   "email": "tom.flitterman@hotmail.fr",
   "DSN": { "host": "localhost", "dbname": "ynov-taf", "username": "root", "password": "root" }
 }

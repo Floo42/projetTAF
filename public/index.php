@@ -10,6 +10,8 @@ $dbname = $json['DSN']['dbname'];
 $mysqlUser = $json['DSN']['username'];
 $mysqlPass = $json['DSN']['password'];
 
+$db = new PDO('mysql:host=' . $mysqlHost . ';dbname=' . $dbname, $mysqlUser, $mysqlPass);
+
 $url = explode("/", $_SERVER['REQUEST_URI']);
 
 $page = $url[1];
