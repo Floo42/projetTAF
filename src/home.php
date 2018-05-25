@@ -2,7 +2,11 @@
 <head>
     <title>Ynov Lyon</title>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <link rel="stylesheet" href="style.css">
+=======
+    <link rel="stylesheet" href="css/home.css">
+>>>>>>> 1254013c5233b2f32d79149938b9b9451cbf6bad
 </head>
 
     <body>
@@ -12,14 +16,12 @@
                 <option value="informatique">Informatique</option>
                 <option value="business">Business</option>
             </select>
-
             <select name="contrat">
-                <option value="default" selected>Type de contrat</option>
-                <option value="stage">Stage</option>
-                <option value="alternance">Alternance</option>
-            </select>
-            <input type="submit" value="Chercher">
-        </form>
-    </body>
+        <option value="default" selected>Type de contrat</option>
+        <option value="stage">Stage</option>
+        <option value="alternance">Alternance</option>
+        </select>
+</form>
+</body>
 </html>
 
