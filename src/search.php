@@ -8,6 +8,7 @@ $authorisedCourses = ['informatique', 'business'];
 $authorisedContracts = ['stage', 'alternance'];
 $authorisedSpeciality = ['webdev'];
 
+
 // /!\ vérifier si $thematique est juste
 
 $query = 'SELECT * FROM offers WHERE course = ' . $course;
