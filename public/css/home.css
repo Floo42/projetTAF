@@ -1,2 +1,10 @@
 .form{
+    margin-left: 35em;
+    margin-top: 3em;
+}
+.thematique{
+    margin-right: 2em;
+}
+.speinfo{
+    display: none;
 }
