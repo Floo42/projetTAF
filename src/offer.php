@@ -65,7 +65,7 @@ $data = $statement->fetch();
              <form method=POST id=contact>
                  <input class="signup-form" type="text" name="name" placeholder="Nom">
                  <input class="signup-form" type="email" name="email" placeholder="Adresse e-mail">
-                 <textarea class="signup-form message-form" form=contact name="name" placeholder="Votre message">Hello</textarea>
+                 <textarea class="signup-form message-form" form=contact name="name" placeholder="Votre message"></textarea>
                  <div class=button><input class="signup-form submit" type="submit" value="Contacter"></div>
              </form>
          </div>
