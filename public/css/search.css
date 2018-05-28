@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_wrapper {
+    width: 980px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.main_wrapper h1 {
+    margin-bottom: 20px;
+}
+
+.results_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search_result {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 300px;
+    padding: 10px;
+}
+
+.search_result h2 {
+    margin-bottom: 8px;
+}

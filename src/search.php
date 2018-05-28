@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/search.css">
-        <title>Résultats de recherche</title>
-    </head>
-
-    <body>
-
-
 <?php
 
 $course = $_POST['course'];
@@ -39,20 +28,38 @@ if (in_array($educationLevel, $authorisedEducationLevel)) {
 $statement = $db->prepare($query);
 $statement->execute();
 
-var_dump($statement);
+#var_dump($statement);
 
-while ($data = $statement->fetch()) {
-    ?>
-
-        <div class="search_result">
-            <h2 class="result_title"><?= utf8_encode($data['title']); ?></h2>
-            <p class="result_description"><?= utf8_encode($data['description']); ?></p>
-            <a href="#" class="result_link">En savoir plus</a>
-        </div>
-
-    <?php
-}
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/search.css">
+        <title>Résultats de recherche</title>
+    </head>
+
+    <body>
+
+        <div class="main_wrapper">
+            <h1>Résultats de recherche :</h1>
+            <div class="results_wrapper">
+                <?php
+                    while ($data = $statement->fetch()) {
+                ?>
+
+                        <div class="search_result">
+                            <h2 class="result_title"><?= $data['title']; ?></h2>
+                            <p class="result_description"><?= truncateString($data['description'], 200); ?></p>
+                            <a href="<?= $domain . '/offer/' . $data['url']; ?>" class="result_link">En savoir plus</a>
+                        </div>
+
+                <?php
+                    }
+                ?>
+            </div>
+        </div>
 
     </body>
 </html>
