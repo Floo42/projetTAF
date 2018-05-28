@@ -45,10 +45,9 @@ function truncateString($string, $n) {
 }
 
 
-/*
+
 function email($title) {
 
-    return $title;
+    return "Bonjour,\n\nJe suis intéressé par votre offre \"" . $title . "\".";
 
 }
-*/

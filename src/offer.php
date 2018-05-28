@@ -1,7 +1,7 @@
 <?php
 
 $statement = $db->prepare("SELECT * FROM offers WHERE url = ?");
-$statement->execute(array('developpeur-web-99876'));
+$statement->execute(array($url[2]));
 
 $data = $statement->fetch();
 
@@ -14,7 +14,7 @@ $data = $statement->fetch();
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-     <link rel="stylesheet" href="css/offer.css">
+     <link rel="stylesheet" href="/css/offer.css">
      <title>Détails de l'offre</title>
 </head>
 
@@ -61,11 +61,11 @@ $data = $statement->fetch();
      <section class=contactform>
 
          <div class=form>
-             <div class=form-text>Intéressé par cette offre ? Contactez nous :</div>
+             <div class=form-text>Intéressé(e) par cette offre ? Contactez-nous :</div>
              <form method=POST id=contact>
-                 <input class="signup-form" type="text" name="name" placeholder="Nom">
+                 <input class="signup-form" type="text" name="name" placeholder="Nom de votre entreprise">
                  <input class="signup-form" type="email" name="email" placeholder="Adresse e-mail">
-                 <textarea class="signup-form message-form" form=contact name="name" placeholder="Votre message">Hello</textarea>
+                 <textarea class="signup-form message-form" form=contact name="name" placeholder="Votre message"><?= email($data['title']); ?></textarea>
                  <div class=button><input class="signup-form submit" type="submit" value="Contacter"></div>
              </form>
          </div>
