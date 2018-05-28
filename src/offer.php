@@ -1,9 +1,11 @@
 <?php
 
-require_once('getData.php');
-$offres = getData();
-$ID = 0;
- ?>
+$statement = $db->prepare("SELECT * FROM offers WHERE url = ?");
+$statement->execute(array('developpeur-web-99876'));
+
+$data = $statement->fetch();
+
+?>
 
 
 <!DOCTYPE html>
@@ -22,7 +24,7 @@ $ID = 0;
              <div class=title>
                  Voici les détails de l'offre :
                  <h1 class=title>
-                     <?=$offres[$ID]['title'] ?>
+                     <?= $data['title']; ?>
                  </h1>
              </div>
          </div>
@@ -30,28 +32,28 @@ $ID = 0;
          <div class=cat>
              <div class=type>
                  Type de contrat :
-                 <?=($offres[$ID]['type']) ?>
+                 <?= $data['contract_type']; ?>
              </div>
          </div>
          <div class=line></div>
          <div class=cat>
              <div class=level>
                  Niveau d'études :
-                 <?=($offres[$ID]['class']) ?>
+                 <?= $data['education_level']; ?>
              </div>
          </div>
          <div class=line></div>
          <div class=cat>
              <div class=desc>
                  Description du profil :
-                 <?=($offres[$ID]['description']) ?>
+                 <?= $data['description']; ?>
              </div>
          </div>
          <div class=line></div>
          <div class=cat>
              <div class=period>
                  Durée :
-                 <?=($offres[$ID]['period']) ?>
+                 #($offres['period'])
              </div>
          </div>
      </section>

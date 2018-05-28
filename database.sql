@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 28, 2018 at 12:22 PM
+-- Generation Time: May 28, 2018 at 12:35 PM
 -- Server version: 5.7.12
 -- PHP Version: 7.1.12
 
@@ -37,15 +37,16 @@ CREATE TABLE `offers` (
   `start` int(11) NOT NULL,
   `end` int(11) NOT NULL,
   `education_level` int(11) NOT NULL,
-  `speciality` varchar(100) NOT NULL
+  `speciality` varchar(100) NOT NULL,
+  `url` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `offers`
 --
 
-INSERT INTO `offers` (`id`, `contract_type`, `description`, `title`, `course`, `start`, `end`, `education_level`, `speciality`) VALUES
-(1, 'stage', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie erat sem, in euismod nunc lobortis a. Praesent tincidunt urna sed mauris interdum aliquam. Quisque porta diam sit amet enim sagittis congue. Morbi maximus auctor imperdiet. Integer et pulvinar eros. Mauris sagittis eu mauris ac faucibus. Integer aliquet diam eget nisi finibus, at luctus justo tempus. Fusce mollis fringilla arcu, a porta tellus imperdiet vel. Ut quis imperdiet mauris. Ut fringilla porttitor tincidunt. Pellentesque cursus sodales eros. Aliquam suscipit ligula ac orci venenatis posuere. Nulla nunc lacus, porta quis lacinia ut, tempus et mi. ', 'Développeur web', 'informatique', 1527485376, 1527785376, 2, 'IT');
+INSERT INTO `offers` (`id`, `contract_type`, `description`, `title`, `course`, `start`, `end`, `education_level`, `speciality`, `url`) VALUES
+(1, 'stage', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie erat sem, in euismod nunc lobortis a. Praesent tincidunt urna sed mauris interdum aliquam. Quisque porta diam sit amet enim sagittis congue. Morbi maximus auctor imperdiet. Integer et pulvinar eros. Mauris sagittis eu mauris ac faucibus. Integer aliquet diam eget nisi finibus, at luctus justo tempus. Fusce mollis fringilla arcu, a porta tellus imperdiet vel. Ut quis imperdiet mauris. Ut fringilla porttitor tincidunt. Pellentesque cursus sodales eros. Aliquam suscipit ligula ac orci venenatis posuere. Nulla nunc lacus, porta quis lacinia ut, tempus et mi. ', 'Développeur web', 'informatique', 1527485376, 1527785376, 2, 'IT', 'developpeur-web-99876');
 
 --
 -- Indexes for dumped tables
