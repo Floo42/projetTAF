@@ -1,10 +1,21 @@
 .form{
-    margin-left: 35em;
-    margin-top: 3em;
+    margin-left: 30em;
+    margin-top: 2.5em;
+    margin-right: 35em;
+    display: flex;
+    flex-direction: column;
+}
+select{
+    margin-top: 1.5em;
+    font-size: 1.5em;
 }
 .thematique{
     margin-right: 2em;
 }
-.speinfo{
+.specialite{
     display: none;
+}
+h1{
+    font-size: 7em;
+    padding-left: 2em;
 }
