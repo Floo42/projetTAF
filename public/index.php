@@ -23,6 +23,9 @@ function getPage($p) {
     elseif ($p == 'search') {
         return 'search.php';
     }
+    elseif ($p == 'offer') {
+        return 'offer.php';
+    }
     else {
         return 'notfound.html';
     }

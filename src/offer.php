@@ -1,0 +1,73 @@
+<?php
+
+require_once('getData.php');
+$offres = getData();
+$ID = 0;
+ ?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+     <link rel="stylesheet" href="css/offer.css">
+     <title>Détails de l'offre</title>
+</head>
+
+ <body>
+     <section class=details>
+         <div class=cat>
+             <div class=title>
+                 Voici les détails de l'offre :
+                 <h1 class=title>
+                     <?=$offres[$ID]['title'] ?>
+                 </h1>
+             </div>
+         </div>
+         <div class=line></div>
+         <div class=cat>
+             <div class=type>
+                 Type de contrat :
+                 <?=($offres[$ID]['type']) ?>
+             </div>
+         </div>
+         <div class=line></div>
+         <div class=cat>
+             <div class=level>
+                 Niveau d'études :
+                 <?=($offres[$ID]['class']) ?>
+             </div>
+         </div>
+         <div class=line></div>
+         <div class=cat>
+             <div class=desc>
+                 Description du profil :
+                 <?=($offres[$ID]['description']) ?>
+             </div>
+         </div>
+         <div class=line></div>
+         <div class=cat>
+             <div class=period>
+                 Durée :
+                 <?=($offres[$ID]['period']) ?>
+             </div>
+         </div>
+     </section>
+
+     <section class=contactform>
+
+         <div class=form>
+             <div class=form-text>Intéressé par cette offre ? Contactez nous :</div>
+             <form method=POST id=contact>
+                 <input class="signup-form" type="text" name="name" placeholder="Nom">
+                 <input class="signup-form" type="email" name="email" placeholder="Adresse e-mail">
+                 <textarea class="signup-form message-form" form=contact name="name" placeholder="Votre message"></textarea>
+                 <div class=button><input class="signup-form submit" type="submit" value="Contacter"></div>
+             </form>
+         </div>
+     </section>
+ </body>
+
+ </html>

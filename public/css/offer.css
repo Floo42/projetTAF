@@ -1,0 +1,88 @@
+html,body{
+    height: 100%;
+    margin:0;
+    padding: 0;
+    display:flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.title{
+    line-height: normal;
+    font-size:30px;
+}
+
+.desc{
+
+}
+
+.cat{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.details{
+    margin:10px;
+    width:55%;
+}
+
+.contactform{
+    width:45%;
+    heidht:100%;
+    background-color:#23b2a4;
+}
+
+.signup-form {
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    box-sizing: border-box;
+    padding: 1px 10px 1px 6px;
+    color: black;
+    border: 1px solid white;
+    height: 32px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.message-form{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    height:200px;
+}
+
+.form{
+    margin:30px;
+}
+
+.submit{
+    color:white;
+    border-radius: 10px;
+    background-color: #e94e6d;
+    border: 1px solid #e94e6d;
+}
+
+.form-text{
+    padding-top:50px;
+    padding-bottom: 20px;
+    font-size:32px;
+}
+
+.line{
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid black 1px;
+    width:70%;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;
+}
+::-moz-placeholder {
+   font-style: italic;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+}
