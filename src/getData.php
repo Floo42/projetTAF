@@ -12,11 +12,9 @@ function getData(){
     $mysqlUser = $json['DSN']['username'];
     $mysqlPass = $json['DSN']['password'];
 
-$db = new PDO('mysql:host=' . $mysqlHost . ';dbname=' . $dbname, $mysqlUser, $mysqlPass, array('charset'=>'utf8'));
-$db->query("SET CHARACTER SET utf8");
-$statement = $db->prepare("
-SELECT * FROM osi_offer;
-");
+#$db = new PDO('mysql:host=' . $mysqlHost . ';dbname=' . $dbname, $mysqlUser, $mysqlPass, array('charset'=>'utf8'));
+#$db->query("SET CHARACTER SET utf8");
+$statement = $db->prepare("SELECT * FROM offers WHERE url = ?");
 $statement->execute();
 return $offres = $statement->fetchAll();
 }

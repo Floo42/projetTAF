@@ -1,5 +1,6 @@
 <?php
 
+/*
 function convertToUrl($string) {
     if (!isset($string) or empty($string)) return false;
     $string = mb_strtolower($string);
@@ -28,9 +29,10 @@ function convertToUrl($string) {
     $string = preg_replace('#-+#', '-', $string);
     return trim($string, '-');
 }
+*/
 
 $jsonContent = file_get_contents('../config.json');
-$json = $json = json_decode($jsonContent, true);
+$json = json_decode($jsonContent, true);
 
 $domain = $json['url'];
 $email = $json['email'];
@@ -39,7 +41,7 @@ $dbname = $json['DSN']['dbname'];
 $mysqlUser = $json['DSN']['username'];
 $mysqlPass = $json['DSN']['password'];
 
-#$db = new PDO('mysql:host=' . $mysqlHost . ';dbname=' . $dbname, $mysqlUser, $mysqlPass);
+$db = new PDO('mysql:host=' . $mysqlHost . ';dbname=' . $dbname, $mysqlUser, $mysqlPass);
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
 
