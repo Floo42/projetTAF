@@ -43,7 +43,7 @@ function getPage($p) {
     elseif ($p == 'offer') {
         return 'offer.php';
     }
-    elseif ($p == 'admin') {
+    else if (strpos($p, "admin") === 0) {
         return 'admin.php';
     }
     else {
