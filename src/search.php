@@ -36,7 +36,7 @@ $statement->execute();
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/search.css">
+        <link rel="stylesheet" href="/css/search.css">
         <title>Résultats de recherche</title>
     </head>
 
