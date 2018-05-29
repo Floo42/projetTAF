@@ -63,10 +63,10 @@ $Parsedown = new Parsedown();
 
          <div class=form>
              <div class=form-text>Intéressé(e) par cette offre ? Contactez-nous :</div>
-             <form method=POST id=contact>
-                 <input class="signup-form" type="text" name="name" placeholder="Nom de votre entreprise">
+             <form method=POST id=contact action="send_mail.php">
+                 <input class="signup-form" type="text" name="company_name" placeholder="Nom de votre entreprise">
                  <input class="signup-form" type="email" name="email" placeholder="Adresse e-mail">
-                 <textarea class="signup-form message-form" form=contact name="name" placeholder="Votre message"><?= email($data['title']); ?></textarea>
+                 <textarea class="signup-form message-form" form=contact name="message" placeholder="Votre message"><?= email($data['title']); ?></textarea>
                  <div class=button><input class="signup-form submit" type="submit" value="Contacter"></div>
              </form>
          </div>

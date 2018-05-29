@@ -53,7 +53,7 @@
                 <option value="spedeux">Spé 2 </option>
             </select>
 
-            <select name="educationLevel" class="nivetude">
+            <select name="educationLevel" class="nivetude" disabled>
                 <option value="default" selected>Niveau d'étude</option>
                 <option value="1">B1</option>
                 <option value="2">B2</option>
