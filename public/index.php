@@ -29,6 +29,9 @@ function getPage($p) {
     elseif ($p == 'offer') {
         return 'offer.php';
     }
+    elseif ($p == 'admin') {
+        return 'admin.php';
+    }
     else {
         return 'notfound.html';
     }
