@@ -5,6 +5,8 @@ $statement->execute(array($url[2]));
 
 $data = $statement->fetch();
 
+$Parsedown = new Parsedown();
+
 ?>
 
 
@@ -45,8 +47,7 @@ $data = $statement->fetch();
          <div class=line></div>
          <div class=cat>
              <div class=desc>
-                 Description du profil :
-                 <?= $data['description']; ?>
+                 <?= $Parsedown->text($data['description']); ?>
              </div>
          </div>
          <div class=line></div>

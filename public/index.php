@@ -1,6 +1,7 @@
 <?php
 
-include('../functions.php');
+require_once('../functions.php');
+require_once('../vendor/autoload.php');
 
 $jsonContent = file_get_contents('../config.json');
 $json = json_decode($jsonContent, true);
@@ -28,6 +29,9 @@ function getPage($p) {
     }
     elseif ($p == 'offer') {
         return 'offer.php';
+    }
+    elseif ($p == 'admin') {
+        return 'admin.php';
     }
     else {
         return 'notfound.html';

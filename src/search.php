@@ -28,7 +28,7 @@ if (in_array($educationLevel, $authorisedEducationLevel)) {
 $statement = $db->prepare($query);
 $statement->execute();
 
-#var_dump($statement);
+$Parsedown = new Parsedown();
 
 ?>
 
@@ -43,6 +43,7 @@ $statement->execute();
     <body>
 
         <div class="main_wrapper">
+            <a href="<?= $domain; ?>">Nouvelle recherche</a>
             <h1>Résultats de recherche :</h1>
             <div class="results_wrapper">
                 <?php
@@ -51,7 +52,7 @@ $statement->execute();
 
                         <div class="search_result">
                             <h2 class="result_title"><?= $data['title']; ?></h2>
-                            <p class="result_description"><?= truncateString($data['description'], 200); ?></p>
+                            <p class="result_description"><?= strip_tags(truncateString($Parsedown->text($data['description']), 200)); ?></p>
                             <a href="<?= $domain . '/offer/' . $data['url']; ?>" class="result_link">En savoir plus</a>
                         </div>
 
