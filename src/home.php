@@ -8,17 +8,18 @@
 </head>
 
     <body>
-    <h1>Trouvez des stagiaires<br> et des alternants</h1>
+    <h1 id="hhome">Trouvez des stagiaires<br> et des alternants</h1>
 
 
         <form action="<?php echo $domain ?>/search" method="POST" class="form">
-
+            <div class="flex_deux">
+            <div class="flex_un">
             <select name="course" class="thematique" id="them">
                 <option value="default" selected>Thématique</option>
                 <option value="informatique" id="info">Informatique</option>
-                <option value="business">Business</option>
-                <option value="arts">Arts</option>
-                <option value="gamed">Game design</option>
+                <option value="business" id="market">Business</option>
+                <option value="arts" id="arts">Arts</option>
+                <option value="gamed" id="gamed">Game design</option>
             </select>
 
             <select name="contract" class="contrat">
@@ -26,11 +27,30 @@
                 <option value="stage">Stage</option>
                 <option value="alternance">Alternance</option>
             </select>
-
+            </div>
+            <div class="flex_un">
             <select name="speciality" class="specialite" id="speinfo">
                 <option value="default" selected>Spécialité</option>
                 <option value="it">IT</option>
                 <option value="merde">Réseaux</option>
+            </select>
+
+            <select name="speciality" class="specialite" id="spemarket">
+                <option value="default" selected>Spécialité</option>
+                <option value="speun">Spé 1</option>
+                <option value="spedeux">Spé 2 </option>
+            </select>
+
+            <select name="speciality" class="specialite" id="spearts">
+                <option value="default" selected>Spécialité</option>
+                <option value="speun">Spé 1</option>
+                <option value="spedeux">Spé 2 </option>
+            </select>
+
+            <select name="speciality" class="specialite" id="spegamed">
+                <option value="default" selected>Spécialité</option>
+                <option value="speun">Spé 1</option>
+                <option value="spedeux">Spé 2 </option>
             </select>
 
             <select name="educationLevel" class="nivetude">
@@ -42,8 +62,9 @@
                 <option value="5">M2</option>
 
             </select>
-
-            <input type="submit" value="Chercher">
+            </div>
+            </div>
+            <input type="submit" value="Chercher" id="btn_un">
 
         </form>
     </body>

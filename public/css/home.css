@@ -1,21 +1,44 @@
+html,body{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
 .form{
-    margin-left: 30em;
+    margin-left: 28em;
     margin-top: 2.5em;
     margin-right: 35em;
+}
+.flex_un{
     display: flex;
     flex-direction: column;
+    margin-right: 6em;
+}
+.flex_deux{
+    display: flex;
 }
 select{
     margin-top: 1.5em;
     font-size: 1.5em;
 }
-.thematique{
-    margin-right: 2em;
-}
+
 .specialite{
     display: none;
 }
-h1{
+#hhome{
     font-size: 7em;
     padding-left: 1.5em;
+    background-image: url("http://www.ynovlyon.com/wp-content/uploads/2017/09/ynov_0239_28107063760_o-1280x580.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#btn_un{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 10.5em;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    border-radius: 4em;
+    font-size: 1em;
 }
