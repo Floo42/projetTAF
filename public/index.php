@@ -1,6 +1,7 @@
 <?php
 
-include('../functions.php');
+require_once('../functions.php');
+require_once('../vendor/autoload.php');
 
 $jsonContent = file_get_contents('../config.json');
 $json = json_decode($jsonContent, true);

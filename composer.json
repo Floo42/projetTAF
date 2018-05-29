@@ -1,0 +1,13 @@
+{
+    "name": "tom/ynov-taf",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Tom F.",
+            "email": "thomas.flitterman@ynov.com"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "^1.7"
+    }
+}
