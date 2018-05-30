@@ -1,4 +1,7 @@
 <?php
+
+require_once('../functions.php');
+
 if(isset($_GET['delete_id']) && $_GET['delete_id']!= null){
 $statement = $db->prepare("
     DELETE FROM offers WHERE id=".$_GET['delete_id'].";
@@ -32,7 +35,7 @@ $statement->bindValue(':course', $_POST['course']);
 $statement->bindValue(':start', 0);
 $statement->bindValue(':end',0);
 $statement->bindValue(':speciality', "dfdf");
-$statement->bindValue(':url', "yolo");
+$statement->bindValue(':url', convertToUrl($_POST['title']).uniqID());
 $statement->execute();
 header("Refresh:0");
 }
@@ -65,6 +68,7 @@ header("admin:0");
 
 <h1>Espace Administration</h1>
 
+<div class=content>
 <section class="add-offer">
     <div class="title">
 <div class=add-title>Ajouter une nouvelle offre :</div>
@@ -97,7 +101,7 @@ header("admin:0");
         <option value="gamed">Game design</option>
     </select>
 
-<input class="form-input" type="submit" value="Envoyer le formulaire">
+<input class="form-input submit" type="submit" value="Envoyer le formulaire">
 
 </form>
 
@@ -144,8 +148,8 @@ $data = $statement->fetchAll();
 for($i = 0;$i<count($data);$i++){
     print("
     <div class=\"offer\">
-<a href=?edit_id=". $data[$i]['id']."><button class=\"offer-button\" type=\"button\">Modifier</button></a>
-<a href=?delete_id=". $data[$i]['id']."><button class=\"offer-button\" type=\"button\">Supprimer</button></a>
+<a href=?edit_id=". $data[$i]['id']."><button class=\"offer-button edit-button\" type=\"button\">Modifier</button></a>
+<a href=?delete_id=". $data[$i]['id']."><button class=\"offer-button delete-button\" type=\"button\">Supprimer</button></a>
         <div class=\"offer-title\">Titre : ".
             $data[$i]["title"]."
         </div>
@@ -156,7 +160,7 @@ for($i = 0;$i<count($data);$i++){
         <div class=\"offer-desc\"> Description : ".
             substr($data[$i]["description"],0,100)."...
         </div>
-        <div class=\"offer-level\">Niveau : ".
+        <div class=\"offer-level\">Année : ".
             $data[$i]["education_level"]."
         </div>
     </div>
@@ -167,6 +171,7 @@ for($i = 0;$i<count($data);$i++){
 ?>
 </section>
 
+</div>
 
  </body>
 
