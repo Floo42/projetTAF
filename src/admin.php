@@ -1,4 +1,7 @@
 <?php
+
+require_once('../functions.php');
+
 if(isset($_GET['delete_id']) && $_GET['delete_id']!= null){
 $statement = $db->prepare("
     DELETE FROM offers WHERE id=".$_GET['delete_id'].";
@@ -32,7 +35,7 @@ $statement->bindValue(':course', $_POST['course']);
 $statement->bindValue(':start', 0);
 $statement->bindValue(':end',0);
 $statement->bindValue(':speciality', "dfdf");
-$statement->bindValue(':url', "yolo");
+$statement->bindValue(':url', convertToUrl($_POST['title']).uniqID());
 $statement->execute();
 header("Refresh:0");
 }

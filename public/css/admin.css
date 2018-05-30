@@ -7,8 +7,9 @@ html, body{
 }
 
 h1{
-    margin:0;
+    margin:10px;
     padding:0;
+    color: #23b2a4;
 }
 
 .add-offer{
@@ -87,6 +88,7 @@ input[type=button], button{
 }
 
 .submit{
+    height:30px;
     color:white;
     background-color: #23b2a4;
     border: 1px solid #23b2a4;
