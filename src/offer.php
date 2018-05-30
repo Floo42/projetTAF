@@ -7,6 +7,10 @@ $data = $statement->fetch();
 
 $Parsedown = new Parsedown();
 
+if (!isset($url[2]) or !$data) {
+    header('Location: ' . $domain . '/notfound');
+}
+
 ?>
 
 <!DOCTYPE html>
