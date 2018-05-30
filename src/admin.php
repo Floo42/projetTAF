@@ -103,6 +103,32 @@ header("admin:0");
 
 </section>
 
+<?php
+if(isset($values['title'])){
+    $title=$values['title'];
+}
+
+
+
+if(isset($_GET['edit_id'])){
+    print("
+<section class=\"add-offer\" ID=\"edit\">
+    <div class=\"title\">Modifier une offre :</div>
+
+    <form method=\"POST\" class=\"form\" id=\"edit\">
+
+        <input name=\"title-edit\" class=form-input type=text placeholder=\"Titre de l'offre\" ". "value=" . $title .">
+        <textarea name=\"description-edit\" class=\"form-input textarea\" placeholder=\"Description\">".$values['description'] ."</textarea>
+
+    <input class=\"form-input\" type=\"submit\" value=\"Modifier l'offre\">
+
+</form>
+
+</section>
+");
+}
+
+?>
 
 <section class="gestion">
     <div class="title">
@@ -141,26 +167,7 @@ for($i = 0;$i<count($data);$i++){
 ?>
 </section>
 
-<?php
-if(isset($_GET['edit_id'])){
-    print("
-<section class=\"add-offer\" ID=\"edit\">
-    <div class=\"title\">Modifier une offre :</div>
 
-    <form method=\"POST\" class=\"form\" id=\"edit\">
-
-        <input name=\"title-edit\" class=form-input type=text placeholder=\"Titre de l'offre\" ". "value=".$values['title'].">
-        <textarea name=\"description-edit\" class=\"form-input textarea\" placeholder=\"Description\">".$values['description'] ."</textarea>
-
-    <input class=\"form-input\" type=\"submit\" value=\"Modifier l'offre\">
-
-</form>
-
-</section>
-");
-}
-
-?>
  </body>
 
  </html>
