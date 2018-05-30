@@ -1,12 +1,16 @@
-html,body{
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 4em;
+    background-color: white;
+    position: fixed;
 }
 .form{
-    margin-left: 28em;
-    margin-top: 2.5em;
-    margin-right: 35em;
+    background-color: #e94e6d;
+    border-radius: 1em;
 }
 .flex_un{
     display: flex;
@@ -14,7 +18,14 @@ html,body{
     margin-right: 6em;
 }
 .flex_deux{
+    background-color: #23b2a4;
     display: flex;
+    margin-left: 28em;
+    margin-right: 26em;
+    padding-bottom: 2.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
 }
 select{
     margin-top: 1.5em;
@@ -27,14 +38,17 @@ select{
 #hhome{
     font-size: 7em;
     padding-left: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     background-image: url("http://www.ynovlyon.com/wp-content/uploads/2017/09/ynov_0239_28107063760_o-1280x580.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: #23a092;
 }
 #btn_un{
     margin-top: 2em;
     margin-bottom: 2em;
-    margin-left: 10.5em;
+    margin-left: 39em;
     padding-left: 2em;
     padding-top: 1em;
     padding-right: 2em;
