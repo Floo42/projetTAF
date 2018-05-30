@@ -8,10 +8,11 @@
 </head>
 
     <body>
+        <nav></nav>
     <h1 id="hhome">Trouvez des stagiaires<br> et des alternants</h1>
 
 
-        <form action="<?php echo $domain ?>/search" method="POST" class="form">
+        <form action="<?php echo $domain ?>/search" method="POST" class="form" id="form_un">
             <div class="flex_deux">
             <div class="flex_un">
             <select name="course" class="thematique" id="them">
@@ -22,6 +23,8 @@
                 <option value="gamed" id="gamed">Game design</option>
             </select>
 
+
+
             <select name="contract" class="contrat">
                 <option value="default" selected>Type de contrat</option>
                 <option value="stage">Stage</option>
@@ -29,6 +32,16 @@
             </select>
             </div>
             <div class="flex_un">
+
+                <select name="educationLevel" class="nivetude">
+                    <option value="default" selected>Niveau d'étude</option>
+                    <option value="1">B1</option>
+                    <option value="2">B2</option>
+                    <option value="3">B3</option>
+                    <option value="4">M1</option>
+                    <option value="5">M2</option>
+                </select>
+
             <select name="speciality" class="specialite" id="speinfo">
                 <option value="default" selected>Spécialité</option>
                 <option value="it">IT</option>
@@ -51,16 +64,6 @@
                 <option value="default" selected>Spécialité</option>
                 <option value="speun">Spé 1</option>
                 <option value="spedeux">Spé 2 </option>
-            </select>
-
-            <select name="educationLevel" class="nivetude" disabled>
-                <option value="default" selected>Niveau d'étude</option>
-                <option value="1">B1</option>
-                <option value="2">B2</option>
-                <option value="3">B3</option>
-                <option value="4">M1</option>
-                <option value="5">M2</option>
-
             </select>
             </div>
             </div>
