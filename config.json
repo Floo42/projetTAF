@@ -1,5 +1,17 @@
 {
   "url": "http://ynov-taf.local",
-  "email": "tom.flitterman@hotmail.fr",
-  "DSN": { "host": "localhost", "dbname": "ynov-taf", "username": "root", "password": "" }
+  "mail_server": {
+    "host": "smtp.gmail.com",
+    "port": "465",
+    "security": "ssl",
+    "username": "jeankevin69127@gmail.com",
+    "password": "QE9tx2q7W43Vq",
+    "receiver": "thomas.flitterman@ynov.com"
+  },
+  "DSN": {
+    "host": "localhost",
+    "dbname": "ynov-taf",
+    "username": "root",
+    "password": "root"
+  }
 }

@@ -65,8 +65,6 @@
                 <option value="speun">Spé 1</option>
                 <option value="spedeux">Spé 2 </option>
             </select>
-
-
             </div>
             </div>
             <input type="submit" value="Chercher" id="btn_un">

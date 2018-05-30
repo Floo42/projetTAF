@@ -20,7 +20,6 @@ $jsonContent = file_get_contents('../config.json');
 $json = json_decode($jsonContent, true);
 
 $domain = $json['url'];
-$email = $json['email'];
 $mysqlHost = $json['DSN']['host'];
 $dbname = $json['DSN']['dbname'];
 $mysqlUser = $json['DSN']['username'];
@@ -43,8 +42,11 @@ function getPage($p) {
     elseif ($p == 'offer') {
         return 'offer.php';
     }
-    elseif ($p == 'admin') {
+    elseif (strpos($p, "admin") === 0) {
         return 'admin.php';
+    }
+    elseif ($p == "send-mail") {
+        return 'send_mail.php';
     }
     else {
         return 'notfound.html';
