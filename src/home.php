@@ -13,7 +13,7 @@
             padding: 1em;
             margin-left: 2em;
             margin-right: 2em;
-            border-radius: 2em;
+            border-radius: 1.5em;
         }
          h1{
              font-size: 4.5em;
