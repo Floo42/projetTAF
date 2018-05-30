@@ -116,7 +116,7 @@ $Parsedown = new Parsedown();
     </div>
 
 <div>
-    <h2 class="offers">Découvrez nos dernières offres</h2>
+    <h2 class="offers">Découvrez nos dernières offres :</h2>
     <?php
     $number=0;
     print("
@@ -124,7 +124,7 @@ $Parsedown = new Parsedown();
     ");
     for($i =0; $i<3;$i++){
     print("
-            <div class=\"search_result\">
+               <div class=\"search_result\">
                 <a href=". $domain . '/offer/' . $data[$number]['url'] . " class=\"result_link\" target=\"_blank\"><h2 class=\"result_title\">". $data[$number]['title'] ."</h2></a>
                 <p class=\"result_description\">". strip_tags(truncateString($Parsedown->text($data[$number]['description']), 200))."</p>
             </div>
