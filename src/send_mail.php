@@ -57,6 +57,6 @@ $message = \Swift_Message::newInstance($subject)
 
 $result = $mailer->send($message);
 
-header('Location: ' . $domain . '/offer/' . $url[2]);
+header('Location: ' . $domain . '/offer/' . $url[2] . '/success');
 
 ?>

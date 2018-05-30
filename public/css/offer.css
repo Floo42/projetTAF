@@ -89,6 +89,14 @@ html,body{
     margin-top: 0px;
 }
 
+.success {
+    border: 1px solid black;
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    background-color: aquamarine;
+}
+
 ::-webkit-input-placeholder {
    font-style: italic;
 }

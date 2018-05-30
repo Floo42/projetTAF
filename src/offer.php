@@ -22,6 +22,13 @@ $Parsedown = new Parsedown();
 
  <body>
      <section class=details>
+         <?php
+            if (isset($url[3]) AND $url[3] == 'success') {
+         ?>
+                <h3 class="success">Le mail a bien été envoyé. Vous recevrez une réponse sous peu.</h3>
+         <?php
+            }
+         ?>
          <div class=cat>
              <div class=title>
                  Voici les détails de l'offre :
