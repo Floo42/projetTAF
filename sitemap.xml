@@ -1,15 +1,5 @@
 <?php
-/**
- * @category   class
- * @package    SitemapGenerator
- * @author     Paweł Antczak <pawel@antczak.org>
- * @copyright  2009 Paweł Antczak
- * @license    http://www.gnu.org/licenses/gpl.html  GPL V 2.0
- * @version    1.2.0
- * @see        http://www.sitemaps.org/protocol.php
- * @see        http://en.wikipedia.org/wiki/Sitemaps
- * @see        http://en.wikipedia.org/wiki/Sitemap_index
- */
+
 class SitemapGenerator {
     /**
      * Name of sitemap file
