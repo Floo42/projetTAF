@@ -1,3 +1,13 @@
+<?php
+
+$statement = $db->prepare("
+SELECT * FROM offers ORDER BY id DESC LIMIT 3
+");
+$statement->execute();
+$data = $statement->fetchAll();
+$Parsedown = new Parsedown();
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -94,7 +104,7 @@
             </select>
                 </div>
             </div>
-                <div class="row my-5 p-5">
+                <div class="row p-4">
                 <div class="col-5"></div>
                 <div class="col-2">
             <input type="submit" value="Chercher">
@@ -102,6 +112,31 @@
                 </div>
             </div>
         </form>
+
     </div>
+
+<div>
+    <h2 class="offers">Découvrez nos dernières offres</h2>
+    <?php
+    $number=0;
+    print("
+                <div class=\"results_wrapper\">
+    ");
+    for($i =0; $i<3;$i++){
+    print("
+            <div class=\"search_result\">
+                <a href=". $domain . '/offer/' . $data[$number]['url'] . " class=\"result_link\" target=\"_blank\"><h2 class=\"result_title\">". $data[$number]['title'] ."</h2></a>
+                <p class=\"result_description\">". strip_tags(truncateString($Parsedown->text($data[$number]['description']), 200))."</p>
+            </div>
+            ");
+                $number++;
+        }
+        print("
+    </div>
+        ");
+
+    ?>
+</div>
+
     </body>
 </html>
