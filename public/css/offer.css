@@ -6,6 +6,10 @@ html,body{
     font-family: 'Montserrat', sans-serif;
 }
 
+body, html {
+    background-color: #f6f6f6;
+}
+
 
 .title{
     line-height: normal;
@@ -25,11 +29,19 @@ html,body{
 .cat{
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .details{
-    margin:10px;
+    margin: 0;
     width:55%;
+}
+
+.desc {
+    line-height: 25px;
+    text-align: justify;
+    padding: 0 30px 0 30px;
 }
 
 .contactform{
@@ -101,13 +113,35 @@ html,body{
     margin: auto;
     padding: 15px;
     background-color: aquamarine;
+    color: #494949;
 }
 
 .return_link {
     color: #42AB9E;
     text-decoration: none;
-    font-size: 1.2em;
-    padding-left: 15px;
+    font-size: 1.1em;
+    margin-left: 15px;
+    position: relative;
+    bottom: 30px;
+}
+.return_link:hover {
+    border-bottom: 1px solid #42AB9E;
+}
+
+.menu {
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    left: 150px;
+}
+
+.logo img {
+    max-width: 150px;
 }
 
 ::-webkit-input-placeholder {
