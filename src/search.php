@@ -43,7 +43,7 @@ $Parsedown = new Parsedown();
     <body>
 
         <div class="main_wrapper">
-            <a href="<?= $domain; ?>">Nouvelle recherche</a>
+            <a class="new" href="<?= $domain; ?>">Effecuter une nouvelle recherche</a>
             <h1>Résultats de recherche :</h1>
             <div class="results_wrapper">
                 <?php
@@ -51,9 +51,8 @@ $Parsedown = new Parsedown();
                 ?>
 
                         <div class="search_result">
-                            <h2 class="result_title"><?= $data['title']; ?></h2>
+                            <a href="<?= $domain . '/offer/' . $data['url']; ?>" class="result_link" target="_blank"><h2 class="result_title"><?= $data['title']; ?></h2></a>
                             <p class="result_description"><?= strip_tags(truncateString($Parsedown->text($data['description']), 200)); ?></p>
-                            <a href="<?= $domain . '/offer/' . $data['url']; ?>" class="result_link" target="_blank">En savoir plus</a>
                         </div>
 
                 <?php

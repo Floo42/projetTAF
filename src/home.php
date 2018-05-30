@@ -2,38 +2,48 @@
 <html>
 <head>
     <title>Ynov Lyon</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/homes.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="js/home.js"></script>
+    <style type="text/css" media="screen" title="Style1">
+         select{
+            font-size: 2.5em;
+        }
+        input{
+            padding: 1em;
+            margin-left: 2em;
+            margin-right: 2em;
+            border-radius: 2em;
+        }
+         h1{
+             font-size: 4.5em;
+             margin-left: 2em;
+             color: #23b2a4;
+         }
+    </style>
 </head>
 
     <body>
-        <nav></nav>
-    <h1 id="hhome">Trouvez des stagiaires<br> et des alternants</h1>
+    <div class="main">
+    <h1>Trouvez des stagiaires<br> et des alternants</h1>
 
 
         <form action="<?php echo $domain ?>/search" method="POST" class="form" id="form_un">
-            <div class="flex_deux">
-            <div class="flex_un">
-            <select name="course" class="thematique" id="them">
+            <div class="container-fluid">
+            <div class="row my-5">
+                <div class="col-3"></div>
+                <div class="col-2 my-2">
+            <select name="course"  id="them">
                 <option value="default" selected>Thématique</option>
                 <option value="informatique" id="info">Informatique</option>
                 <option value="business" id="market">Business</option>
                 <option value="arts" id="arts">Arts</option>
                 <option value="gamed" id="gamed">Game design</option>
             </select>
-
-
-
-            <select name="contract" class="contrat">
-                <option value="default" selected>Type de contrat</option>
-                <option value="stage">Stage</option>
-                <option value="alternance">Alternance</option>
-            </select>
-            </div>
-            <div class="flex_un">
-
-                <select name="educationLevel" class="nivetude">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2 my-2">
+                <select name="educationLevel">
                     <option value="default" selected>Niveau d'étude</option>
                     <option value="1">B1</option>
                     <option value="2">B2</option>
@@ -42,33 +52,56 @@
                     <option value="5">M2</option>
                 </select>
 
-            <select name="speciality" class="specialite" id="speinfo">
+            </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-3"></div>
+                <div class="col-2">
+            <select name="contract" class="contrat">
+                <option value="default" selected>Type de contrat</option>
+                <option value="stage">Stage</option>
+                <option value="alternance">Alternance</option>
+            </select>
+            </div>
+                <div class="col-1"></div>
+                <div class="col-2">
+             <select name="speciality" id="disable" disabled>
+                 <option value="default" selected>Spécialité</option>
+
+             </select>
+            <select name="speciality" id="speinfo" class="specialite">
                 <option value="default" selected>Spécialité</option>
                 <option value="it">IT</option>
                 <option value="merde">Réseaux</option>
             </select>
 
-            <select name="speciality" class="specialite" id="spemarket">
+            <select name="speciality" id="spemarket" class="specialite">
                 <option value="default" selected>Spécialité</option>
                 <option value="speun">Spé 1</option>
                 <option value="spedeux">Spé 2 </option>
             </select>
 
-            <select name="speciality" class="specialite" id="spearts">
+            <select name="speciality" id="spearts" class="specialite">
                 <option value="default" selected>Spécialité</option>
                 <option value="speun">Spé 1</option>
                 <option value="spedeux">Spé 2 </option>
             </select>
 
-            <select name="speciality" class="specialite" id="spegamed">
+            <select name="speciality" class="specialite" id="spegamed" class="specialite">
                 <option value="default" selected>Spécialité</option>
                 <option value="speun">Spé 1</option>
                 <option value="spedeux">Spé 2 </option>
             </select>
+                </div>
             </div>
+                <div class="row my-5 p-5">
+                <div class="col-5"></div>
+                <div class="col-2">
+            <input type="submit" value="Chercher">
+                </div>
+                </div>
             </div>
-            <input type="submit" value="Chercher" id="btn_un">
-
         </form>
+    </div>
     </body>
 </html>
