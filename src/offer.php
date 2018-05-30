@@ -22,6 +22,7 @@ $Parsedown = new Parsedown();
 
  <body>
      <section class=details>
+         <div><a href="<?= $domain; ?>" class="return_link">Retour à l'accueil</a></div>
          <?php
             if (isset($url[3]) AND $url[3] == 'success') {
          ?>
@@ -31,25 +32,23 @@ $Parsedown = new Parsedown();
          ?>
          <div class=cat>
              <div class=title>
-                 Voici les détails de l'offre :
                  <h1 class=title>
                      <?= $data['title']; ?>
                  </h1>
              </div>
          </div>
-         <div class=line></div>
          <div class=cat>
-             <div class=type>
-                 Type de contrat :
-                 <?= $data['contract_type']; ?>
-             </div>
-         </div>
-         <div class=line></div>
-         <div class=cat>
-             <div class=level>
-                 Niveau d'études :
-                 <?= $data['education_level']; ?>
-             </div>
+             <strong><?= ucfirst($data['contract_type']); ?></strong> •
+             <span class="small">Classes concernées</span>
+             <?php
+                for ($i = $data['education_level']; $i <= 5; $i++) {
+                    if ($i == 1) { echo "<span class=\"year\">B1</span> / "; }
+                    if ($i == 2) { echo "<span class=\"year\">B2</span> / "; }
+                    if ($i == 3) { echo "<span class=\"year\">B3</span> / "; }
+                    if ($i == 4) { echo "<span class=\"year\">M1</span> / "; }
+                    if ($i == 5) { echo "<span class=\"year\">M2</span>"; }
+                }
+             ?>
          </div>
          <div class=line></div>
          <div class=cat>
@@ -57,19 +56,12 @@ $Parsedown = new Parsedown();
                  <?= $Parsedown->text($data['description']); ?>
              </div>
          </div>
-         <div class=line></div>
-         <div class=cat>
-             <div class=period>
-                 Durée :
-                 #($offres['period'])
-             </div>
-         </div>
      </section>
 
      <section class=contactform>
 
          <div class=form>
-             <div class=form-text>Intéressé(e) par cette offre ? Contactez-nous :</div>
+             <div class=form-text>Intéressé(e) par ce profil ? Contactez-nous :</div>
              <form method=POST id=contact action="<?= $domain; ?>/send-mail/<?= $url[2]; ?>">
                  <input class="signup-form" type="text" name="company_name" placeholder="Nom de votre entreprise" required>
                  <input class="signup-form" type="email" name="email" placeholder="Adresse e-mail" required>
