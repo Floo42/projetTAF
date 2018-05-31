@@ -34,10 +34,16 @@ $Parsedown = new Parsedown();
 </head>
 
     <body>
+
+        <section class=details>
+            <div class="menu">
+                <a href="https://www.ynov.com/" class="logo"><img src="https://brand.ynov.com/img/logos/ynov_campus/logo_ynov_campus_rvb_couleur.png" alt="logo Ynov" /></a>
+            </div>
+
     <div class="main">
-    <h1>Trouvez des stagiaires<br> et des alternants</h1>
+    <h1 class="title">Trouvez des stagiaires<br> et des alternants</h1>
 
-
+<div class="form-container">
         <form action="<?php echo $domain ?>/search" method="POST" class="form" id="form_un">
             <div class="container-fluid">
             <div class="row my-5">
@@ -107,12 +113,12 @@ $Parsedown = new Parsedown();
                 <div class="row p-4">
                 <div class="col-5"></div>
                 <div class="col-2">
-            <input class="submit-button" type="submit" value="Chercher">
+            <input class="submit-button" type="submit" value="Rechercher">
                 </div>
                 </div>
             </div>
         </form>
-
+</div>
     </div>
 
 <div>
@@ -122,7 +128,15 @@ $Parsedown = new Parsedown();
     print("
                 <div class=\"results_wrapper\">
     ");
-    for($i =0; $i<3;$i++){
+    $total = count($data);
+    if($total>3){
+        $loopNumber =3;
+    }
+    else{
+        $loopNumber=$total;
+    }
+    for($i =0; $i<$loopNumber;$i++){
+        if($data[$number]['title']!= null){
     print("
                <div class=\"search_result\">
                 <a href=". $domain . '/offer/' . $data[$number]['url'] . " class=\"result_link\" target=\"_blank\"><h2 class=\"result_title\">". $data[$number]['title'] ."</h2></a>
@@ -131,6 +145,7 @@ $Parsedown = new Parsedown();
             ");
                 $number++;
         }
+    }
         print("
     </div>
         ");
