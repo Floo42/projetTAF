@@ -5,18 +5,28 @@
 Les différentes configurations possibles se trouvent dans le fichier *config.json*
 
 **Configuration mail**
+
 *"mail_server": {
+
   "host": "smtp.gmail.com",* a changer en fonction du service mail utilisé (ici gmail)
+
   *"port": "465",* le port a changer si besoin
+
   *"security": "ssl",* sécurisation via ssl
+
   *"username":* l'adresse du compte expediteur
+
   *"password":* le mot de passe du compte expediteur
+
   *"receiver":* l'adresse du receveur
+
 *},*
 
 
 *"username":* l'adresse du compte expediteur
+
 *"password":* le mot de passe du compte expediteur
+
 *"receiver":* l'adresse du receveur
 
 **Configuration base de données**
