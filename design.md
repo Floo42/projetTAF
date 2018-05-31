@@ -19,3 +19,18 @@ Pour enrichir la page, sans la rendre lourde, nous affichons les trois dernière
 Nous avons légèrement grisé le fond de la page pour la rendre plus agréable à l'oeil. Cela offre plus de comfort à l'utilisateur. Nous avons aussi centré le contenu pour améliorer sa lisibilité.
 
 Avec un lien visible dans une couleur qui ressort, l'utilisateur peut facilement retourner à l'accueil et faire une nouvelle recherche.
+
+Comme sur la page d'accueil, les offres sont présentées dans un cadre avec le titre comme lien cliquable et un aperçu de la description est présent. Encore une fois, le design est inspiré de la charte graphique.
+
+## Page des offres
+La page est coupée en deux sections. À gauche, les détails de l'offre. Le titre de la description est centré. La description est facilement lisible et visible. Cela permet à l'utilisateur de comprendre facilement de quoi il s'agit.
+
+À droite se trouve le formulaire de contact. Avec un texte par défaut, un champ facilement identifiable permet à l'utilisateur de rajouter des questions ou des informations relatives à l'entreprise. Ce formulaire prend environ la moitié de la page, sans nuire à la visibilité de la description de l'offre. Cette disposition optimise l'engagement de l'utilisateur. Le but est de lui donner envie de contacter Ynov.
+L'ergonomie de ce formulaire est donc optimisé. Grâce au message par défaut, l'utilisateur pourrait même ne préciser que son nom et adresse email.
+
+Là encore, la charte graphique d'Ynov est respectée.
+
+## Backoffice
+Le backoffice est simple et intuitif. Il est fait principalement avec Bootstrap. Les boutons de modification et suppression sont très visibles (de différente couleur), et les offres sont listées dans un tableau bootstrap propre.
+
+Les champs de formulaire sont très faciles à distinguer.
