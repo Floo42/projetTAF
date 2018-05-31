@@ -5,7 +5,7 @@ $contract = $_POST['contract'];
 $speciality = $_POST['speciality'];
 $educationLevel = $_POST['educationLevel'];
 
-$authorisedCourses = ['informatique', 'business'];
+$authorisedCourses = ['informatique', 'business', 'arts', 'gamed'];
 $authorisedContracts = ['stage', 'alternance'];
 $authorisedSpeciality = ['IT', 'reseaux', 'SEO'];
 $authorisedEducationLevel = [1, 2, 3, 4, 5];
@@ -16,10 +16,10 @@ $authorisedEducationLevel = [1, 2, 3, 4, 5];
 $query = 'SELECT * FROM offers WHERE course = "' . $course . '"';
 
 if (in_array($contract, $authorisedContracts)) {
-    $query .= ' AND contract_type = ' . $contract;
+    $query .= ' AND contract_type = "' . $contract .'"';
 }
 if (in_array($speciality, $authorisedSpeciality)) {
-    $query .= ' AND speciality = ' . $speciality;
+    $query .= ' AND speciality = "' . $speciality . '"';
 }
 if (in_array($educationLevel, $authorisedEducationLevel)) {
     $query .= ' AND education_level >= ' . $educationLevel;

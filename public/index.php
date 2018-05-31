@@ -33,9 +33,6 @@ function getPage($p) {
     elseif ($p == 'administration') {
         return 'administration.php';
     }
-    elseif (strpos($p, "admin") === 0) {
-        return 'admin.php';
-    }
     elseif ($p == 'send-mail') {
         return 'send_mail.php';
     }
