@@ -42,6 +42,11 @@ $Parsedown = new Parsedown();
 
     <body>
 
+                <section class=details>
+                    <div class="menu">
+                        <a href="https://www.ynov.com/" class="logo"><img src="https://brand.ynov.com/img/logos/ynov_campus/logo_ynov_campus_rvb_couleur.png" alt="logo Ynov" /></a>
+                    </div>
+                    
         <div class="main_wrapper">
             <a class="new" href="<?= $domain; ?>">Effecuter une nouvelle recherche</a>
             <h1>Résultats de recherche :</h1>

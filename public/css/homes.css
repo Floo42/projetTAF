@@ -33,8 +33,42 @@ h2 {
 }
 
 .submit-button{
+    margin-left:-45px;
+    width:200px;
     color:white;
     border-radius: 10px;
     background-color: #e94e6d;
     border: 1px solid #e94e6d;
+}
+
+.menu {
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    left: 150px;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.offers{
+    margin-top:20px;
+    margin-left:150px;
+    margin-bottom: 20px;
+}
+
+.title {
+    padding-top:20px;
+    margin-left:150px;
+    font-size:50px;
+}
+
+.form{
+    margin-left:140px;
 }
