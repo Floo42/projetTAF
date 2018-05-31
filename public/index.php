@@ -39,6 +39,9 @@ function getPage($p) {
     elseif ($p == 'connexion-admin') {
         return 'connexion_admin.php';
     }
+    elseif ($p == 'robots.txt') {
+        return '../robots.txt';
+    }
     else {
         return 'notfound.html';
     }
