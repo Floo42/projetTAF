@@ -32,10 +32,15 @@ Les différentes configurations possibles se trouvent dans le fichier *config.js
 **Configuration base de données**
 
 *"DSN": {
+
   "host":* adresse de la base
+
   *"dbname":* nom de la base
+
   *"username":* nom d'utilisateur de la base
+
   *"password":* mot de passe de la base
+  
 *}*
 
 **Composer**
