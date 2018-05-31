@@ -1,5 +1,6 @@
 {
   "url": "http://ynov-taf.local",
+  "pass_admin": "d033e22ae348aeb5660fc2140aec35850c4da997",
   "mail_server": {
     "host": "smtp.gmail.com",
     "port": "465",

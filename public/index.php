@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once('../functions.php');
 require_once('../vendor/autoload.php');
 
@@ -30,11 +30,17 @@ function getPage($p) {
     elseif ($p == 'offer') {
         return 'offer.php';
     }
+    elseif ($p == 'administration') {
+        return 'administration.php';
+    }
     elseif (strpos($p, "admin") === 0) {
         return 'admin.php';
     }
-    elseif ($p == "send-mail") {
+    elseif ($p == 'send-mail') {
         return 'send_mail.php';
+    }
+    elseif ($p == 'connexion-admin') {
+        return 'connexion_admin.php';
     }
     else {
         return 'notfound.html';

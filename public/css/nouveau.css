@@ -1,0 +1,10 @@
+.main_wrapper {
+    width: 980px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.form_title {
+    margin-top: 20px;
+    text-align: center;
+}
