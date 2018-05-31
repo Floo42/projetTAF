@@ -33,6 +33,8 @@ h2 {
 }
 
 .submit-button{
+    padding:10px;
+    font-size:28px;
     margin-left:-45px;
     width:200px;
     color:white;
