@@ -13,7 +13,7 @@
             <h1>Connexion à l'espace administration</h1>
             <div class="form-group">
                 <label for="exampleInputPassword1">Identifiant</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Identifiant" name="id" />
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Identifiant" name="id" />
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Mot de passe</label>
