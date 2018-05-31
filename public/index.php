@@ -42,6 +42,9 @@ function getPage($p) {
     elseif ($p == 'robots.txt') {
         return '../robots.txt';
     }
+    elseif ($p == 'sitemaps.xml') {
+        return '../sitemaps.xml';
+    }
     else {
         return 'notfound.html';
     }
