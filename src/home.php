@@ -107,7 +107,7 @@ $Parsedown = new Parsedown();
                 <div class="row p-4">
                 <div class="col-5"></div>
                 <div class="col-2">
-            <input type="submit" value="Chercher">
+            <input class="submit-button" type="submit" value="Chercher">
                 </div>
                 </div>
             </div>

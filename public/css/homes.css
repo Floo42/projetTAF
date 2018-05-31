@@ -31,3 +31,10 @@ h2 {
     margin:0px;
     padding:0px;
 }
+
+.submit-button{
+    color:white;
+    border-radius: 10px;
+    background-color: #e94e6d;
+    border: 1px solid #e94e6d;
+}
