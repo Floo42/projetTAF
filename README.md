@@ -23,12 +23,6 @@ Les différentes configurations possibles se trouvent dans le fichier *config.js
 *},*
 
 
-*"username":* l'adresse du compte expediteur
-
-*"password":* le mot de passe du compte expediteur
-
-*"receiver":* l'adresse du receveur
-
 **Configuration base de données**
 
 *"DSN": {
@@ -40,7 +34,7 @@ Les différentes configurations possibles se trouvent dans le fichier *config.js
   *"username":* nom d'utilisateur de la base
 
   *"password":* mot de passe de la base
-  
+
 *}*
 
 **Composer**
