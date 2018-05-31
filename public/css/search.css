@@ -4,6 +4,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: #f6f6f6;
+}
+
 .main_wrapper {
     width: 980px;
     margin: auto;
@@ -12,6 +16,7 @@
 
 .main_wrapper h1 {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .results_wrapper {
