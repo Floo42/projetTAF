@@ -1,10 +1,10 @@
 # projetTAF
 
-**Fichier de configuration**
+# Fichier de configuration
 
 Les différentes configurations possibles se trouvent dans le fichier *config.json*
 
-**Configuration mail**
+# Configuration mail
 
 *"mail_server": {
 
@@ -23,7 +23,7 @@ Les différentes configurations possibles se trouvent dans le fichier *config.js
 *},*
 
 
-**Configuration base de données**
+# Configuration base de données
 
 *"DSN": {
 
@@ -37,11 +37,11 @@ Les différentes configurations possibles se trouvent dans le fichier *config.js
 
 *}*
 
-**Composer**
+# Composer
 
 Dans le dossier du projet, entrez la commande *composer install*
 
 
-**Base de données**
+# Base de données
 
 Importer dans une base "ynov-taf" (ou bien changer le nom de votre base dans *config.json*) le fichier *database.sql*
