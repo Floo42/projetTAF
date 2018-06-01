@@ -31,6 +31,6 @@ L'ergonomie de ce formulaire est donc optimisé. Grâce au message par défaut, 
 Là encore, la charte graphique d'Ynov est respectée.
 
 ## Backoffice
-Le backoffice est simple et intuitif. Il est fait principalement avec Bootstrap. Les boutons de modification et suppression sont très visibles (de différente couleur), et les offres sont listées dans un tableau bootstrap propre.
+Le backoffice est simple et intuitif. Il est fait principalement avec Bootstrap. Les boutons de modification et suppression sont très visibles (de différentes couleurs), et les offres sont listées dans un tableau bootstrap propre.
 
 Les champs de formulaire sont très faciles à distinguer.
